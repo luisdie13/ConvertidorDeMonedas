@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Monedas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Convertidor de Monedas</h1>
+        <input type="number" id="inputAmount" placeholder="Ingrese la cantidad">
+        <select id="inputCurrency">
+            <option value="RUB">Rublo (RUB)</option>
+            <option value="CNY">Yuan (CNY)</option>
+            <option value="USD">Dólar (USD)</option>
+        </select>
+        <button onclick="convertCurrency()">Convertir</button>
+        
+        <div class="results">
+            <div class="currency">
+                <h2>Rublo (RUB)</h2>
+                <p id="rubValue">0 RUB</p>
+            </div>
+            <div class="currency">
+                <h2>Yuan (CNY)</h2>
+                <p id="cnyValue">0 CNY</p>
+            </div>
+            <div class="currency">
+                <h2>Dólar (USD)</h2>
+                <p id="usdValue">0 USD</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
